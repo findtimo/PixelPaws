@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+.App {
+  text-align: center;
+  font-family: "Press Start 2P", "VT323";
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.overlay {
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+
+.bg-wrap {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  background-size: cover !important;
+  background-image: url('./assets/background/Layers/sky2.png') ;
+}
+
+  .bg {
+    position: absolute;
+    z-index: -1;
+    /* width: 100vw;
+    height: 100vh; */
+    background-size: contain !important;
+    /* background-position: center; */
+    width: 100%;
+    height: 100%;
+    animation: moving-images 100s infinite linear;
+  }
+
+  .bg5 {
+    background-image: url('./assets/background/Layers/trees2.png');
+    animation-duration: 60s;
+  }
+  .bg4 {
+    background-image: url('./assets/background/Layers/mountains2.png');
+    animation-duration: 130s;
+  }
+  .bg3 {
+    background-image: url('./assets/background/Layers/far-mountains2.png');
+    animation-duration: 200s;
+  }
+  .bg2 {
+    background-image: url('./assets/background/Layers/near-clouds2.png');
+    animation-duration: 300s;
+  }
+  .bg1 {
+    background-image: url('./assets/background/Layers/far-clouds2.png');
+    animation-duration: 400s;
+  }
+
+  @keyframes moving-images {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100vw 0;
+    }
+  }
+
+.horizontal-scroll-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 18rem;
+  padding-bottom: 0;
+}
+
+.nft-list {
+  display: inline-block;
+  list-style-type: none;
+  align-items:center;
+  padding: 0;
+  margin: 0;
+  /* Adjust the width and height to your preference */
+  /* width: 100%; */
+  /* height: 18rem; */
+}
+
+.nft-list li {
+  display: inline-block;
+  /* Adjust the styling of your NFT items */
+  /* background-color: #eaeaea; */
+  /* padding: 10px;
+  margin-right: 10px; */
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
