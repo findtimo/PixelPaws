@@ -81,7 +81,6 @@ const MainMint = ({accounts, setAccounts, toggleComponent}) => {
             <Box width="36vw">
                 <Box paddingBottom="3em">
                     <div>
-                        {/* <Text fontSize="3em" textShadow="0 5px #000000">PixelPaws</Text> */}
                         <Text fontSize="1.4em" letterSpacing="-5.5%" fontFamily="VT323" textShadow="0 2px 2px #000000">
                             Experience a whimsical universe where your pets transform into valiant heroes. 
                             Join them in a vibrant digital realm and unleash your creativity to save the world!

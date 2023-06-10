@@ -4,6 +4,7 @@ import { Box, Button, Flex, Image, Link, Spacer, Text, Input } from '@chakra-ui/
 const About = ({}) => {
 
     return (
+        <div>
       <Flex justify="center" align="center" height="100vh" paddingBottom="30rem" overflow="auto">
         <Box width="70vw" height="100%">
             <div>
@@ -54,6 +55,7 @@ const About = ({}) => {
             </div>
             </Box>
         </Flex>
+        </div>
     );
 }
 

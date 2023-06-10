@@ -45,13 +45,11 @@ const NavBar = ({ accounts, setAccounts, setShowAbout }) => {
 
 
             <Flex justify="space-around" align="center" width="40%" padding="20px">
-            {/* {right side} */}
             <Box onClick={showMint} margin="0 15px">Mint</Box>
             <Spacer />
             <Box onClick={showAbout} margin="0 15px">About</Box>
             <Spacer />
 
-            {/* {is connected} */}
             {isConnected ? (
                 <Box margin="0 15px">Connected</Box>) : (
                     <Button 
