@@ -4,12 +4,12 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 const About = ({}) => {
 
     return (
-      <Flex justify="center" align="center" height="75vh" width="100vw">
-        <Box mr="15vw" ml="15vw" overflow="scroll" height="100%" width="100vw">
-            <>
-                <h1>
-                    About PixelPaws
-                </h1>
+      <Flex justify="center" align="center" alignContent="center" height="75vh" width="100vw">
+        <Box mr="15vw" ml="15vw" overflow="hidden" height="100%" width="56vw">
+            <Box height="100%" width="100%" overflow="auto">
+                <Text fontSize="2.5em" textShadow="0 5px #000000">
+                    About<br/>PixelPaws
+                </Text>
                 <br />
                 <Text fontSize="1.4em" fontFamily="VT323" textShadow="0 2px 2px #000000">
                     An NFT initiative project by Timothy Koh. The website is built using Vite and runs ReactJS and Typescript.
@@ -62,7 +62,7 @@ const About = ({}) => {
                     Overall, this project was done to expose me to the inner workings of BlockChain, and understand how contracts work fundamentally. Along the way I also learnt about testing concepts before uploading to a proper network and market like OpenSea.
                 </Text>
                 <br />
-            </>
+                </Box>
             </Box>
         </Flex>
     );
